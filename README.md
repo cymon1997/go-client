@@ -2,7 +2,7 @@
 
 Light all-in-one client in [Go](https://golang.org) specialized for you, such as: http API client.
 
-For samples: [examples](#examples).
+For samples: [sample](#sample).
 
 ## Current Support
 
@@ -20,7 +20,7 @@ For samples: [examples](#examples).
 go get -u github.com/cymon1997/go-client
 ```
 
-## Examples
+## Sample
 
 See [examples](https://github.com/cymon1997/go-client/tree/master/examples) directory for more featured use cases.
 
