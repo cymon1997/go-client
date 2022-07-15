@@ -20,7 +20,7 @@ For samples: [examples](#examples).
 go get -u github.com/cymon1997/go-client
 ```
 
-## Samples
+## Examples
 
 See [examples](https://github.com/cymon1997/go-client/tree/master/examples) directory for more featured use cases.
 
@@ -54,9 +54,9 @@ Format:
 > [prefix]_[feature_name]
 
 Prefix: 
-- f_ for new feature implementation
-- i_ for adding code improvement
-- b_ for fixing bug
+- `f_` for new feature implementation
+- `i_` for adding code improvement
+- `b_` for fixing bug
 
 Examples: 
 - f_grpc_client
