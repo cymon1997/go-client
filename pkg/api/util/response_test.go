@@ -6,7 +6,6 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-
 	"gopkg.in/h2non/gock.v1"
 )
 
@@ -68,7 +67,7 @@ func TestParseBody(t *testing.T) {
 
 		resp, err := client.Do(request)
 		assert.Nil(t, err)
-		err = ParseBody(resp, &response)
+		err = ParseResponseBody(resp, &response)
 		assert.Error(t, err)
 
 		// Case success
@@ -79,7 +78,7 @@ func TestParseBody(t *testing.T) {
 
 		resp, err = client.Do(request)
 		assert.Nil(t, err)
-		err = ParseBody(resp, &response)
+		err = ParseResponseBody(resp, &response)
 		assert.Nil(t, err)
 		assert.Equal(t, "some_data", response.Data)
 	})

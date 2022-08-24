@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/cymon1997/go-client/internal/http/util"
 	"github.com/cymon1997/go-client/pkg/api"
+	"github.com/cymon1997/go-client/pkg/api/util"
 )
 
 func examples() {
@@ -44,7 +44,7 @@ func examples() {
 		Data    interface{} `json:"data"`
 	}
 	var response Response
-	err = util.ParseBody(resp, &response)
+	err = util.ParseResponseBody(resp, &response)
 	if err != nil {
 		log.Println("error: ", err)
 		return

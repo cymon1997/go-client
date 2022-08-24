@@ -11,8 +11,8 @@ func IsStatusOK(resp *http.Response) bool {
 	return resp.StatusCode >= 200 && resp.StatusCode < 300
 }
 
-// ParseBody parse request body to dest struct
-func ParseBody(resp *http.Response, dest interface{}) error {
+// ParseResponseBody parse response body to dest struct
+func ParseResponseBody(resp *http.Response, dest interface{}) error {
 	raw, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return err

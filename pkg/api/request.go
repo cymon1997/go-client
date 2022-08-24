@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/cymon1997/go-client/internal/http/util"
 	"github.com/cymon1997/go-client/internal/utils"
+	"github.com/cymon1997/go-client/pkg/api/util"
 	"github.com/google/go-querystring/query"
 )
 
