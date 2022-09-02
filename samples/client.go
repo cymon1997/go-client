@@ -1,4 +1,4 @@
-package examples
+package samples
 
 import (
 	"context"
@@ -6,18 +6,18 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/cymon1997/go-client/pkg/api"
-	"github.com/cymon1997/go-client/pkg/api/util"
+	httpClient "github.com/cymon1997/go-client/http"
+	"github.com/cymon1997/go-client/http/util"
 )
 
-func examples() {
-	cfg := api.Config{
+func samples() {
+	cfg := httpClient.Config{
 		Host:    "http://localhost:8000",
 		Timeout: 3000,
 	}
 
 	// Init client
-	client := api.New(cfg)
+	client := httpClient.New(cfg)
 
 	// Set mandatory headers that will be applied to all requests
 	client.SetBaseHeaders(map[string]string{

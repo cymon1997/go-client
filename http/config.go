@@ -1,4 +1,4 @@
-package api
+package http
 
 type Config struct {
 	// Host including http protocol
